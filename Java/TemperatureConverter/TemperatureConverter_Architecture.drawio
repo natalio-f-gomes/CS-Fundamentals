@@ -1,0 +1,181 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Temperature Converter Architecture" id="architecture">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Temperature Converter - System Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="334" y="30" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="app-layer" value="Presentation Layer" style="swimlane;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="100" y="120" width="360" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="app-main" value="&lt;b&gt;App.java&lt;/b&gt;&lt;br&gt;(Main Entry Point)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" parent="app-layer" vertex="1">
+          <mxGeometry x="80" y="50" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="input-handler" value="&lt;b&gt;getUserInput()&lt;/b&gt;&lt;br&gt;- Handles user input&lt;br&gt;- Scanner wrapper" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=10;" parent="app-layer" vertex="1">
+          <mxGeometry x="20" y="140" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="welcome-handler" value="&lt;b&gt;welcomeMessage()&lt;/b&gt;&lt;br&gt;- Displays greeting&lt;br&gt;- User interaction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=10;" parent="app-layer" vertex="1">
+          <mxGeometry x="190" y="140" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="logic-layer" value="Business Logic Layer" style="swimlane;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="540" y="120" width="520" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="temp-conversion" value="&lt;b&gt;TemperatureConversion.java&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" parent="logic-layer" vertex="1">
+          <mxGeometry x="160" y="40" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="instance-vars" value="&lt;b&gt;Instance Variables&lt;/b&gt;&lt;br&gt;- temperature: String&lt;br&gt;- initialUnit: String&lt;br&gt;- outputUnit: String&lt;br&gt;- resultTemperature: float" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;spacingLeft=10;" parent="logic-layer" vertex="1">
+          <mxGeometry x="40" y="110" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="validation" value="&lt;b&gt;Validation Layer&lt;/b&gt;&lt;br&gt;&lt;br&gt;• validateUnitName()&lt;br&gt;• convertTemperatureToFloat()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;align=left;spacingLeft=10;fontColor=#333333;" parent="logic-layer" vertex="1">
+          <mxGeometry x="40" y="240" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="conversion-methods" value="&lt;b&gt;Conversion Engine&lt;/b&gt;&lt;br&gt;&lt;br&gt;• convertCelsiusToFahrenheit()&lt;br&gt;• convertKelvinToFahrenheit()&lt;br&gt;• convertFahrenheitToCelsius()&lt;br&gt;• convertKelvinToCelsius()&lt;br&gt;• convertCelsiusToKelvin()&lt;br&gt;• convertFahrenheitKelvin()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;spacingLeft=10;" parent="logic-layer" vertex="1">
+          <mxGeometry x="280" y="110" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="core-logic" value="&lt;b&gt;Core Logic&lt;/b&gt;&lt;br&gt;&lt;br&gt;• temperatureConverter()&lt;br&gt;  (Routing logic)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=10;" parent="logic-layer" vertex="1">
+          <mxGeometry x="280" y="270" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="output-methods" value="&lt;b&gt;Output Layer&lt;/b&gt;&lt;br&gt;&lt;br&gt;• getTemperature()&lt;br&gt;• getInitialUnit()&lt;br&gt;• getOutputUnit()&lt;br&gt;• printResult()" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=10;" parent="logic-layer" vertex="1">
+          <mxGeometry x="160" y="370" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="dependencies" value="External Dependencies" style="swimlane;fillColor=#f5f5f5;strokeColor=#666666;fontSize=14;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="100" y="460" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="scanner" value="&lt;b&gt;java.util.Scanner&lt;/b&gt;&lt;br&gt;Standard Input Stream" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" parent="dependencies" vertex="1">
+          <mxGeometry x="105" y="40" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="user" value="&lt;b&gt;USER&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="20" y="230" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="console" value="&lt;b&gt;Console Output&lt;/b&gt;&lt;br&gt;System.out" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" parent="1" vertex="1">
+          <mxGeometry x="165" y="620" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="user" target="app-main" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow1-label" value="Input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1" parent="arrow1" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#9673a6;dashed=1;" parent="1" source="app-main" target="input-handler" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow2-label" value="Request Input" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="arrow2" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="-15" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#9673a6;dashed=1;" parent="1" source="app-main" target="welcome-handler" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow3-label" value="Display Message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="arrow3" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="20" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=3;strokeColor=#d79b00;" parent="1" source="app-main" target="temp-conversion" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow4-label" value="Create Object &amp; Process" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1" parent="arrow4" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" y="2" relative="1" as="geometry">
+            <mxPoint x="5" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#b85450;dashed=1;" parent="1" source="temp-conversion" target="instance-vars" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#666666;" parent="1" source="temp-conversion" target="validation" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow6-label" value="Validate" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="arrow6" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#d6b656;" parent="1" source="temp-conversion" target="conversion-methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow7-label" value="Convert" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="arrow7" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#9673a6;" parent="1" source="temp-conversion" target="core-logic" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow8-label" value="Route" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="arrow8" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#d6b656;dashed=1;" parent="1" source="core-logic" target="conversion-methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow9-label" value="Calls Specific Method" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="arrow9" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="60" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#82b366;" parent="1" source="temp-conversion" target="output-methods" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arrow10-label" value="Output" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="arrow10" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#82b366;" parent="1" source="output-methods" target="console" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow11-label" value="Display Result" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=11;fontStyle=1" parent="arrow11" vertex="1" connectable="0">
+          <mxGeometry x="-0.2" y="1" relative="1" as="geometry">
+            <mxPoint x="45" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="arrow12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#d79b00;dashed=1;" parent="1" source="scanner" target="input-handler" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box" value="Legend" style="swimlane;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="100" y="590" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=3;strokeColor=#d79b00;" parent="legend-box" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="40" as="sourcePoint" />
+            <mxPoint x="80" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend1-text" value="Object Creation/Main Flow" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="legend-box" vertex="1">
+          <mxGeometry x="90" y="30" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#666666;" parent="legend-box" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="70" as="sourcePoint" />
+            <mxPoint x="80" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend2-text" value="Method Invocation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="legend-box" vertex="1">
+          <mxGeometry x="90" y="60" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#9673a6;dashed=1;" parent="legend-box" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="100" as="sourcePoint" />
+            <mxPoint x="80" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend3-text" value="Data Flow/Dependency" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="legend-box" vertex="1">
+          <mxGeometry x="90" y="90" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="notes" value="&lt;b&gt;Architecture Notes&lt;/b&gt;&lt;br&gt;&lt;br&gt;1. Separation of Concerns: UI logic separated from business logic&lt;br&gt;2. Single Responsibility: Each method has one clear purpose&lt;br&gt;3. Validation Layer: Input validation before processing&lt;br&gt;4. Static Methods: Conversion logic is stateless and reusable&lt;br&gt;5. Error Handling: Try-catch for type conversion, validation checks" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;verticalAlign=top;spacingLeft=10;spacingTop=10;" parent="1" vertex="1">
+          <mxGeometry x="540" y="590" width="520" height="150" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

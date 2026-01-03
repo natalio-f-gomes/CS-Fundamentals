@@ -1,0 +1,64 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="eEw8YXd9rcJXPfmUjHOC">
+    <mxGraphModel dx="983" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-15" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="270" width="340" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="270" width="210" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-17" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="270" width="120" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-18" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-19" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="280" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-20" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="280" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-21" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="350" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-22" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="350" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-23" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="350" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-24" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-25" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="420" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-26" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="420" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-27" value="Player&#39;s Turn" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-28" value="NEW GAME" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-29" value="STATUS" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VRXZasmDj2HRkwCB-Wdd-30" target="VRXZasmDj2HRkwCB-Wdd-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-30" value="Frame" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="600" y="130" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VRXZasmDj2HRkwCB-Wdd-31" value="Panel" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="600" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
